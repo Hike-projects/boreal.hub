@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boreal Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="your-integrity-code" crossorigin="anonymous" />
+
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <span style="font-size:50px;cursor:pointer" onclick="openNav()">≡</span>
+    <img src="/web_files/logo/boreal-logo.png" alt="Logo">
+    <i class="fas fa-search" onclick="openSearch()" style="cursor: pointer; font-size: 24px;"></i>
+</header>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <img src="/web_files/logo/boreal-logo.png" alt="Small Logo">
+    <a href="#"><i class="fas fa-home"></i> Home</a>
+    <a href="#"><i class="fas fa-shopping-cart"></i> Products</a>
+    <a href="#"><i class="fas fa-shopping-bag"></i> Cart</a>
+</div>
+
+<div class="overlay" onclick="closeNav()"></div>
+<div id="main">
+    <!-- Existing products with the original and discounted prices -->
+    <div class="product">
+        <img src="/products/watches/casio/vintage/PhotoRoom-20231113_191205_2.png" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>Description of Product 1.</p>
+        <p class="price">
+            <span>₹500</span>
+            <span class="discounted-price">₹400</span>
+        </p>
+        <button class="add-to-cart-btn" onclick="addToCart(1)">
+            <i class="fas fa-cart-plus"></i> Add to Cart
+        </button>
+        <button class="buy-now-btn" onclick="buyNow(1)">
+            <i class="fas fa-shopping-bag"></i> Buy Now
+        </button>
+    </div>
+    
+    <div class="product">
+        <img src="/products/watches/casio/vintage/PhotoRoom-20231113_191205_3.png" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>Description of Product 2.</p>
+        <p class="price">
+            <span>₹750</span>
+            <span class="discounted-price">₹600</span>
+        </p>
+        <button class="add-to-cart-btn" onclick="addToCart(2)">
+            <i class="fas fa-cart-plus"></i> Add to Cart
+        </button>
+        <button class="buy-now-btn" onclick="buyNow(2)">
+            <i class="fas fa-shopping-bag"></i> Buy Now
+        </button>
+    </div>
+
+    <!-- Add more products with the same structure -->
+</div>
+
+
+<footer>
+    <img src="/web_files/logo/boreal-logo.png" alt="Small Logo">
+    <span class="footer-name">BOREAL HUB </span>
+    <hr>
+    <br>
+    <button class="footer-button" onclick="buttonClick(1)">Button 1 <i class="fas fa-arrow-right icon"></i></button>
+    <button class="footer-button" onclick="buttonClick(2)">Button 2 <i class="fas fa-arrow-right icon"></i></button>
+    <button class="footer-button" onclick="buttonClick(3)">Button 3 <i class="fas fa-arrow-right icon"></i></button>
+    <button class="footer-button" onclick="buttonClick(4)">Button 4 <i class="fas fa-arrow-right icon"></i></button>
+    <button class="footer-button" onclick="buttonClick(5)">Button 5 <i class="fas fa-arrow-right icon"></i></button>
+    <br><br>
+    <div style="text-align: center;">
+        &copy; 2023 Boreal Hub. All rights reserved.
+    </div>
+</footer>
+    
+ <script src="script.js">script.js</script>
+
+</body>
+</html>
